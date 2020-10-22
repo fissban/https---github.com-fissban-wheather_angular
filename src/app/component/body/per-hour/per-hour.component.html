@@ -1,0 +1,59 @@
+<div class="row bg-light2 shadow-sm border-light rounded mt-3">
+    <div class="container">
+        <div class="row text-success text-center">
+            <div class="col-12">
+                <h3>Weather hour per hour</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container pb-3">
+                <div class="d-flex flex-row flex-nowrap pb-1" style="max-width: 100%; overflow-x: auto;white-space: nowrap;">
+                    <div class="" *ngFor="let weather of dataPerHourIn">
+                        <div class="card text-dark" style="width:10rem;">
+                            <div class="container">
+                                <div class="row p-1">
+                                    <div class="col-12 text-center">
+                                        <h5 class="card-title">{{weather.hour_data + 'hs'}}</h5>
+                                    </div>
+                                </div>
+                                <div class="row p-1">
+                                    <div class="col-12">
+                                        <img attr.src="{{'https://v5i.tutiempo.net/wi/01/90/' + weather.icon + '.png'}}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+
+                                <div class="row p-1">
+                                    <div class="col-5 text-sm">
+                                        Temp:
+                                    </div>
+                                    <div class="col-7 text-sm">
+                                        {{weather.temperature + 'ºC'}}
+                                    </div>
+                                </div>
+
+
+                                <div class="row p-1">
+                                    <div class="col-5 text-sm">
+                                        Humedity:
+                                    </div>
+                                    <div class="col-7 text-sm">
+                                        {{weather.humidity + '%'}}
+                                    </div>
+                                </div>
+                                <div class="row p-1">
+                                    <div class="col-5 text-sm">
+                                        Wind:
+                                    </div>
+                                    <div class="col-7 text-sm">
+                                        {{weather.wind + ' km/h'}}
+                                        <img attr.src="{{'https://v5i.tutiempo.net/wd/' + weather.icon_wind + '.png'}}" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

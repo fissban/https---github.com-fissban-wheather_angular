@@ -1,0 +1,72 @@
+<div class="row bg-light2 shadow-sm border-light rounded mt-3">
+    <div class="container">
+        <div class="row bg-success rounded-top text-light text-center">
+            <div class="col-12">
+                <h3>Weather Today</h3>
+            </div>
+        </div>
+        <div class="row" style="height: 11.5rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 bg-primary2 p-2">
+
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{'https://v5i.tutiempo.net/wi/01/90/' + dataTodayIn.icon + '.png'}}" alt="" style="width: 100%;">
+                            </div>
+                            <div class="col-6">
+                                <div class="row text-light" style="font-size: 4rem;top: 2rem;">
+                                    {{dataHourIn.temperature}} ºC
+                                </div>
+                                <div class="row text-light" style="font-size: 1.5rem;">
+                                    Min: {{dataTodayIn.temperature_min}}°C
+                                </div>
+                                <div class="row text-light" style="font-size: 1.5rem;">
+                                    Max: {{dataTodayIn.temperature_max}}°C
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-6" style="border-left: 1px solid rgb(196, 196, 196);">
+                        <div class="row">
+                            <div class="col-4 text-primary2">
+                                <h2>Weather:</h2>
+                            </div>
+                            <div class="col-8 text-warning2">
+                                <h2>{{dataHourIn.text}}</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-primary2">
+                                <h2>Humidity:</h2>
+                            </div>
+                            <div class="col-8 text-warning2">
+                                <h2>{{dataHourIn.humidity + ' %'}}</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-primary2">
+                                <h2>Pressure:</h2>
+                            </div>
+                            <div class="col-8 text-warning2">
+                                <h2>{{dataHourIn.pressure + ' hPa'}}</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-primary2">
+                                <h2>Wind:</h2>
+                            </div>
+                            <div class="col-8 text-warning2">
+                                <h2>{{dataHourIn.wind + ' km/h'}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 5rem;
+    background-color: #f0ecec;
+    font-family: 'Nunito', serif;
+    font-size: 0.95rem;
+    /*
+    background-image: url("./assets/img/warren-wong-fNUNt9w3m-Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+*/
+}
+
+.bg-light2 {
+    /*236, 236, 236*/
+    background-color: rgb(225 226 228);
+}
+
+.border-light {
+    border: 1px solid #cdd6cf !important;
+}
+
+.bg-light3 {
+    /*236, 236, 236*/
+    background-color: #cacac9 !important;
+}
+
+.bg-primary2 {
+    background-color: #0063BF !important;
+}
+
+.bg-warning2 {
+    background-color: #BD9A00 !important;
+}
+
+.bg-danger2 {
+    background-color: #BD1C00 !important;
+}
+
+.text-primary2 {
+    color: #0063BF !important;
+}
+
+.text-warning2 {
+    color: #BD9A00 !important;
+}
+
+.text-danger2 {
+    color: #BD1C00 !important;
+}

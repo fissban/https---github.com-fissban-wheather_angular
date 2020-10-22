@@ -1,0 +1,30 @@
+import {HourData} from "./HourData";
+
+export interface Hour
+{
+    hour1: HourData,
+    hour2: HourData,
+    hour3: HourData,
+    hour4: HourData,
+    hour5: HourData,
+    hour6: HourData,
+    hour7: HourData,
+    hour8: HourData,
+    hour9: HourData,
+    hour10: HourData,
+    hour11: HourData,
+    hour12: HourData,
+    hour13: HourData,
+    hour14: HourData,
+    hour15: HourData,
+    hour16: HourData,
+    hour17: HourData,
+    hour18: HourData,
+    hour19: HourData,
+    hour20: HourData,
+    hour21: HourData,
+    hour22: HourData,
+    hour23: HourData,
+    hour24: HourData,
+    hour25: HourData,
+}
