@@ -10,6 +10,7 @@ import {BodyComponent} from './component/body/body.component';
 import {PerDayComponent} from './component/body/per-day/per-day.component';
 import {PerHourComponent} from './component/body/per-hour/per-hour.component';
 import { TodayComponent } from './component/body/today/today.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TodayComponent } from './component/body/today/today.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

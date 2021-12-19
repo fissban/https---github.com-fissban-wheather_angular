@@ -1,69 +1,67 @@
 <div class="row bg-light2 shadow-sm border-light rounded mt-3">
-    <div class="container">
+    <div class="col-12">
         <div class="row bg-success rounded-top text-light text-center">
             <div class="col-12">
-                <h3>Weather Today</h3>
+                <h2>Weather Today</h2>
             </div>
         </div>
-        <div class="row" style="height: 11.5rem;">
-            <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-6 bg-primary2 p-2">
                 <div class="row">
-                    <div class="col-4 bg-primary2 p-2">
-
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="{{'https://v5i.tutiempo.net/wi/01/90/' + dataTodayIn.icon + '.png'}}" alt="" style="width: 100%;">
-                            </div>
-                            <div class="col-6">
-                                <div class="row text-light" style="font-size: 4rem;top: 2rem;">
-                                    {{dataHourIn.temperature}} ºC
-                                </div>
-                                <div class="row text-light" style="font-size: 1.5rem;">
-                                    Min: {{dataTodayIn.temperature_min}}°C
-                                </div>
-                                <div class="row text-light" style="font-size: 1.5rem;">
-                                    Max: {{dataTodayIn.temperature_max}}°C
-                                </div>
-                            </div>
-
-                        </div>
-
-
+                    <div class="col-sm-6 align-middle">
+                        <img src="{{'https://v5i.tutiempo.net/wi/01/90/' + dataTodayIn.icon + '.png'}}" alt="">
                     </div>
+                    <div class="col-sm-6">
+                        <div class="row text-light mt-3" style="font-size: 4rem;">
+                            <div class="col-12">
+                                {{dataHourIn.temperature}} ºC
+                            </div>
+                        </div>
+                        <div class="row text-light mt-5" style="font-size: 1.5rem;">
+                            <div class="col-12">
+                                Min: {{dataTodayIn.temperature_min}}°C
+                            </div>
+                        </div>
+                        <div class="row text-light mt-3" style="font-size: 1.5rem;">
+                            <div class="col-12">
+                                Max: {{dataTodayIn.temperature_max}}°C
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="col-6" style="border-left: 1px solid rgb(196, 196, 196);">
-                        <div class="row">
-                            <div class="col-4 text-primary2">
-                                <h2>Weather:</h2>
-                            </div>
-                            <div class="col-8 text-warning2">
-                                <h2>{{dataHourIn.text}}</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 text-primary2">
-                                <h2>Humidity:</h2>
-                            </div>
-                            <div class="col-8 text-warning2">
-                                <h2>{{dataHourIn.humidity + ' %'}}</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 text-primary2">
-                                <h2>Pressure:</h2>
-                            </div>
-                            <div class="col-8 text-warning2">
-                                <h2>{{dataHourIn.pressure + ' hPa'}}</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 text-primary2">
-                                <h2>Wind:</h2>
-                            </div>
-                            <div class="col-8 text-warning2">
-                                <h2>{{dataHourIn.wind + ' km/h'}}</h2>
-                            </div>
-                        </div>
+            <div class="col-lg-8 col-6" style="border-left: 1px solid #c4c4c4;">
+                <div class="row my-3">
+                    <div class="col-lg-2 col-sm-6 text-primary2" style="font-size: 1.2rem;font-weight: bold;">
+                        Weather:
+                    </div>
+                    <div class="col-lg-10 col-sm-6 text-warning2" style="font-size: 1.2rem;font-weight: bold;">
+                        {{dataHourIn.text}}
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-lg-2 col-sm-2 text-primary2" style="font-size: 1.2rem;font-weight: bold;">
+                        Humidity:
+                    </div>
+                    <div class="col-lg-10 col-sm-10 text-warning2" style="font-size: 1.2rem;font-weight: bold;">
+                        {{dataHourIn.humidity + ' %'}}
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-lg-2 col-sm-2 text-primary2" style="font-size: 1.2rem;font-weight: bold;">
+                        Pressure:
+                    </div>
+                    <div class="col-lg-10 col-sm-10 text-warning2" style="font-size: 1.2rem;font-weight: bold;">
+                        {{dataHourIn.pressure + ' hPa'}}
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-lg-2 col-sm-2 text-primary2" style="font-size: 1.2rem;font-weight: bold;">
+                        Wind:
+                    </div>
+                    <div class="col-lg-10 col-sm-10 text-warning2" style="font-size: 1.2rem;font-weight: bold;">
+                        {{dataHourIn.wind + ' km/h'}}
                     </div>
                 </div>
             </div>
